@@ -21,6 +21,7 @@ packages/*_spider
 env.g.dart
 *.db
 assets/images
+dist/
 
 # IntelliJ related
 *.iml
