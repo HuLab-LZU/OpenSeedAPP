@@ -1,0 +1,443 @@
+{
+  "@@last_modified": "2025-05-30T11:41:07.296828",
+  "title": "OpenSeed",
+  "@title": {
+    "description": "Title",
+    "type": "text",
+    "placeholders": {}
+  },
+  "home": "Home",
+  "@home": {
+    "description": "Home",
+    "type": "text",
+    "placeholders": {}
+  },
+  "explore": "Explore",
+  "@explore": {
+    "description": "Explore",
+    "type": "text",
+    "placeholders": {}
+  },
+  "settings": "Settings",
+  "@settings": {
+    "description": "Settings",
+    "type": "text",
+    "placeholders": {}
+  },
+  "backToTop": "Back to top",
+  "@backToTop": {
+    "description": "Back to top",
+    "type": "text",
+    "placeholders": {}
+  },
+  "search": "Search",
+  "@search": {
+    "description": "Search",
+    "type": "text",
+    "placeholders": {}
+  },
+  "refersh": "Refersh",
+  "@refersh": {
+    "description": "Refersh",
+    "type": "text",
+    "placeholders": {}
+  },
+  "loadFailed": "Loading failed",
+  "@loadFailed": {
+    "description": "Load failed",
+    "type": "text",
+    "placeholders": {}
+  },
+  "retry": "Retry",
+  "@retry": {
+    "description": "Retry",
+    "type": "text",
+    "placeholders": {}
+  },
+  "notFound": "Not Found",
+  "@notFound": {
+    "description": "Not Found",
+    "type": "text",
+    "placeholders": {}
+  },
+  "pageNotFound": "Page Not Found",
+  "@pageNotFound": {
+    "description": "Page Not Found",
+    "type": "text",
+    "placeholders": {}
+  },
+  "pageNotFoundMessage": "Sorry, {title} is currently not available",
+  "@pageNotFoundMessage": {
+    "description": "Page not found message with title",
+    "type": "text",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "tryToUseOtherKeywords": "Try to use other keywords",
+  "@tryToUseOtherKeywords": {
+    "description": "Try to use other keywords",
+    "type": "text",
+    "placeholders": {}
+  },
+  "menu": "Menu",
+  "@menu": {
+    "description": "Menu",
+    "type": "text",
+    "placeholders": {}
+  },
+  "takePhoto": "Take photo",
+  "@takePhoto": {
+    "description": "Take Photo",
+    "type": "text",
+    "placeholders": {}
+  },
+  "selectFromGallery": "Select from gallery",
+  "@selectFromGallery": {
+    "description": "Select from gallery",
+    "type": "text",
+    "placeholders": {}
+  },
+  "general": "General",
+  "@general": {
+    "description": "General",
+    "type": "text",
+    "placeholders": {}
+  },
+  "advanced": "Advanced",
+  "@advanced": {
+    "description": "Advanced",
+    "type": "text",
+    "placeholders": {}
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Language",
+    "type": "text",
+    "placeholders": {}
+  },
+  "theme": "Theme",
+  "@theme": {
+    "description": "Theme",
+    "type": "text",
+    "placeholders": {}
+  },
+  "system": "System",
+  "@system": {
+    "description": "System",
+    "type": "text",
+    "placeholders": {}
+  },
+  "light": "Light",
+  "@light": {
+    "description": "Light",
+    "type": "text",
+    "placeholders": {}
+  },
+  "dark": "Dark",
+  "@dark": {
+    "description": "Dark",
+    "type": "text",
+    "placeholders": {}
+  },
+  "modelConfig": "Model Config",
+  "@modelConfig": {
+    "description": "Model Config",
+    "type": "text",
+    "placeholders": {}
+  },
+  "backendType": "Backend Type",
+  "@backendType": {
+    "description": "Backend Type",
+    "type": "text",
+    "placeholders": {}
+  },
+  "numberOfThreads": "Number of Threads",
+  "@numberOfThreads": {
+    "description": "Number of Threads",
+    "type": "text",
+    "placeholders": {}
+  },
+  "setNumberOfThreads": "Set Number of Threads",
+  "@setNumberOfThreads": {
+    "description": "Set Number of Threads",
+    "type": "text",
+    "placeholders": {}
+  },
+  "enterANumberGtZero": "Enter a number > 0",
+  "@enterANumberGtZero": {
+    "description": "Enter a number greater than zero",
+    "type": "text",
+    "placeholders": {}
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Cancel",
+    "type": "text",
+    "placeholders": {}
+  },
+  "ok": "OK",
+  "@ok": {
+    "description": "OK",
+    "type": "text",
+    "placeholders": {}
+  },
+  "pleaseEnterANumberGtZero": "Please enter a valid number greater than 0",
+  "@pleaseEnterANumberGtZero": {
+    "description": "Please enter a number greater than zero",
+    "type": "text",
+    "placeholders": {}
+  },
+  "topK": "Top K",
+  "@topK": {
+    "description": "Top K",
+    "type": "text",
+    "placeholders": {}
+  },
+  "apiBaseUrl": "API Base URL",
+  "@apiBaseUrl": {
+    "description": "API Base URL",
+    "type": "text",
+    "placeholders": {}
+  },
+  "notSet": "Not Set",
+  "@notSet": {
+    "description": "Not Set",
+    "type": "text",
+    "placeholders": {}
+  },
+  "about": "About",
+  "@about": {
+    "description": "About",
+    "type": "text",
+    "placeholders": {}
+  },
+  "version": "Version",
+  "@version": {
+    "description": "Version",
+    "type": "text",
+    "placeholders": {}
+  },
+  "appVersion": "V1.0.0",
+  "@appVersion": {
+    "description": "App Version",
+    "type": "text",
+    "placeholders": {}
+  },
+  "appIntroduction": "OpenSeed APP is an AI-powered, large-scale and open-source seed identification showcase for seed analysis ecosystem.\n\nAuthor: XXX\n\nCopyright © 2025 OpenSeed All rights reserved.\n\n",
+  "@appIntroduction": {
+    "description": "App Introduction",
+    "type": "text",
+    "placeholders": {}
+  },
+  "appAuthor": "Author: Rainyl and all contributors.",
+  "@appAuthor": {
+    "description": "App Author",
+    "type": "text",
+    "placeholders": {}
+  },
+  "appCopyright": "Copyright © 2025 OpenSeed All rights reserved.",
+  "@appCopyright": {
+    "description": "App Copyright",
+    "type": "text",
+    "placeholders": {}
+  },
+  "inference": "Inference",
+  "@inference": {
+    "description": "Inference",
+    "type": "text",
+    "placeholders": {}
+  },
+  "results": "Results",
+  "@results": {
+    "description": "Inference Result",
+    "type": "text",
+    "placeholders": {}
+  },
+  "inferenceFailed": "Inference Failed",
+  "@inferenceFailed": {
+    "description": "Inference Failed",
+    "type": "text",
+    "placeholders": {}
+  },
+  "inferenceImage": "Inference Image",
+  "@inferenceImage": {
+    "description": "Inference Image",
+    "type": "text",
+    "placeholders": {}
+  },
+  "modelInfo": "Model Info",
+  "@modelInfo": {
+    "description": "Model Info",
+    "type": "text",
+    "placeholders": {}
+  },
+  "model": "Model",
+  "@model": {
+    "description": "Model",
+    "type": "text",
+    "placeholders": {}
+  },
+  "backend": "Backend",
+  "@backend": {
+    "description": "Backend",
+    "type": "text",
+    "placeholders": {}
+  },
+  "memory": "Memory",
+  "@memory": {
+    "description": "Memory",
+    "type": "text",
+    "placeholders": {}
+  },
+  "time": "Time",
+  "@time": {
+    "description": "Time",
+    "type": "text",
+    "placeholders": {}
+  },
+  "flops": "FLOPs",
+  "@flops": {
+    "description": "FLOPs",
+    "type": "text",
+    "placeholders": {}
+  },
+  "confidence": "Confidence",
+  "@confidence": {
+    "description": "Confidence",
+    "type": "text",
+    "placeholders": {}
+  },
+  "details": "Details",
+  "@details": {
+    "description": "Details",
+    "type": "text",
+    "placeholders": {}
+  },
+  "copySpNameToClipboard": "Copy species name to clipboard",
+  "@copySpNameToClipboard": {
+    "description": "Copy species Name to Clipboard",
+    "type": "text",
+    "placeholders": {}
+  },
+  "copiedSpNameToClipboard": "Copied species name to clipboard",
+  "@copiedSpNameToClipboard": {
+    "description": "Copied species Name to Clipboard",
+    "type": "text",
+    "placeholders": {}
+  },
+  "spInfoNotAvailable": "Species information not available",
+  "@spInfoNotAvailable": {
+    "description": "Species information not available",
+    "type": "text",
+    "placeholders": {}
+  },
+  "pullToFetchMore": "Pull to fetch more",
+  "@pullToFetchMore": {
+    "description": "Pull to fetch more",
+    "type": "text",
+    "placeholders": {}
+  },
+  "copyUrl": "Copy URL",
+  "@copyUrl": {
+    "description": "Copy URL",
+    "type": "text",
+    "placeholders": {}
+  },
+  "copiedUrlToClipboard": "Copied URL to clipboard",
+  "@copiedUrlToClipboard": {
+    "description": "Copied URL to Clipboard",
+    "type": "text",
+    "placeholders": {}
+  },
+  "openInBrowser": "Open in Browser",
+  "@openInBrowser": {
+    "description": "Open in Browser",
+    "type": "text",
+    "placeholders": {}
+  },
+  "downloadingModel": "Downloading Model",
+  "@downloadingModel": {
+    "description": "Downloading Model",
+    "type": "text",
+    "placeholders": {}
+  },
+  "downloadingModelName": "Downloading {modelName}...",
+  "@downloadingModelName": {
+    "description": "Downloading model with name",
+    "type": "text",
+    "placeholders": {
+      "modelName": {
+        "type": "String"
+      }
+    }
+  },
+  "userCancelledDownload": "User cancelled download",
+  "@userCancelledDownload": {
+    "description": "User cancelled download",
+    "type": "text",
+    "placeholders": {}
+  },
+  "startDownloading": "Starting download",
+  "@startDownloading": {
+    "description": "Starting download",
+    "type": "text",
+    "placeholders": {}
+  },
+  "modelDownloadCompleted": "Model {modelName} download completed",
+  "@modelDownloadCompleted": {
+    "description": "Model download completed with name",
+    "type": "text",
+    "placeholders": {
+      "modelName": {
+        "type": "String"
+      }
+    }
+  },
+  "downloadFailed": "Download failed",
+  "@downloadFailed": {
+    "description": "Download failed",
+    "type": "text",
+    "placeholders": {}
+  },
+  "downloadCancelled": "Download cancelled",
+  "@downloadCancelled": {
+    "description": "Download cancelled",
+    "type": "text",
+    "placeholders": {}
+  },
+  "downloadFailedWithError": "Download failed: {error}",
+  "@downloadFailedWithError": {
+    "description": "Download failed with error message",
+    "type": "text",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "modelFileNotExists": "Model file does not exist",
+  "@modelFileNotExists": {
+    "description": "Model file does not exist",
+    "type": "text",
+    "placeholders": {}
+  },
+  "modelFileNotExistsDownload": "Model {modelName} file does not exist, download it?",
+  "@modelFileNotExistsDownload": {
+    "description": "Model file does not exist, ask to download",
+    "type": "text",
+    "placeholders": {
+      "modelName": {
+        "type": "String"
+      }
+    }
+  },
+  "download": "Download",
+  "@download": {
+    "description": "Download",
+    "type": "text",
+    "placeholders": {}
+  }
+}

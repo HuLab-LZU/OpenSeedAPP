@@ -1,0 +1,431 @@
+{
+  "@@last_modified": "2025-05-28T18:01:32.295139",
+  "title": "OpenSeed",
+  "@title": {
+    "description": "Title",
+    "type": "text",
+    "placeholders": {}
+  },
+  "home": "主页",
+  "@home": {
+    "description": "主页",
+    "type": "text",
+    "placeholders": {}
+  },
+  "explore": "探索",
+  "@explore": {
+    "description": "探索",
+    "type": "text",
+    "placeholders": {}
+  },
+  "settings": "设置",
+  "@settings": {
+    "description": "Settings",
+    "type": "text",
+    "placeholders": {}
+  },
+  "backToTop": "返回最上方",
+  "@backToTop": {
+    "description": "Back to top",
+    "type": "text",
+    "placeholders": {}
+  },
+  "search": "搜索",
+  "@search": {
+    "description": "Search",
+    "type": "text",
+    "placeholders": {}
+  },
+  "refersh": "刷新",
+  "@refersh": {
+    "description": "Refersh",
+    "type": "text",
+    "placeholders": {}
+  },
+  "loadFailed": "加载失败",
+  "@loadFailed": {
+    "description": "Load failed",
+    "type": "text",
+    "placeholders": {}
+  },
+  "retry": "重试",
+  "@retry": {
+    "description": "Retry",
+    "type": "text",
+    "placeholders": {}
+  },
+  "notFound": "未找到",
+  "@notFound": {
+    "description": "Not Found",
+    "type": "text",
+    "placeholders": {}
+  },
+  "pageNotFound": "页面未找到",
+  "@pageNotFound": {
+    "description": "Page Not Found",
+    "type": "text",
+    "placeholders": {}
+  },
+  "pageNotFoundMessage": "抱歉，{title} 页面暂时不可用",
+  "@pageNotFoundMessage": {
+    "description": "Page not found message with title",
+    "type": "text",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "tryToUseOtherKeywords": "尝试一下其它关键词吧～",
+  "@tryToUseOtherKeywords": {
+    "description": "Try to use other keywords",
+    "type": "text",
+    "placeholders": {}
+  },
+  "menu": "菜单",
+  "@menu": {
+    "description": "Menu",
+    "type": "text",
+    "placeholders": {}
+  },
+  "takePhoto": "从相机拍摄",
+  "@takePhoto": {
+    "description": "Take Photo",
+    "type": "text",
+    "placeholders": {}
+  },
+  "selectFromGallery": "从相册选择",
+  "@selectFromGallery": {
+    "description": "Select from gallery",
+    "type": "text",
+    "placeholders": {}
+  },
+  "general": "通用",
+  "@general": {
+    "description": "General",
+    "type": "text",
+    "placeholders": {}
+  },
+  "advanced": "高级",
+  "@advanced": {
+    "description": "Advanced",
+    "type": "text",
+    "placeholders": {}
+  },
+  "language": "语言",
+  "@language": {
+    "description": "Language",
+    "type": "text",
+    "placeholders": {}
+  },
+  "theme": "主题",
+  "@theme": {
+    "description": "Theme",
+    "type": "text",
+    "placeholders": {}
+  },
+  "system": "系统",
+  "@system": {
+    "description": "System",
+    "type": "text",
+    "placeholders": {}
+  },
+  "light": "浅色",
+  "@light": {
+    "description": "Light",
+    "type": "text",
+    "placeholders": {}
+  },
+  "dark": "深色",
+  "@dark": {
+    "description": "Dark",
+    "type": "text",
+    "placeholders": {}
+  },
+  "modelConfig": "模型设置",
+  "@modelConfig": {
+    "description": "Model Config",
+    "type": "text",
+    "placeholders": {}
+  },
+  "backendType": "后端选择",
+  "@backendType": {
+    "description": "Backend Type",
+    "type": "text",
+    "placeholders": {}
+  },
+  "numberOfThreads": "线程数",
+  "@numberOfThreads": {
+    "description": "Number of Threads",
+    "type": "text",
+    "placeholders": {}
+  },
+  "setNumberOfThreads": "设置线程数",
+  "@setNumberOfThreads": {
+    "description": "Set Number of Threads",
+    "type": "text",
+    "placeholders": {}
+  },
+  "enterANumberGtZero": "请输入一个大于0的数",
+  "@enterANumberGtZero": {
+    "description": "Enter a number greater than zero",
+    "type": "text",
+    "placeholders": {}
+  },
+  "cancel": "取消",
+  "@cancel": {
+    "description": "Cancel",
+    "type": "text",
+    "placeholders": {}
+  },
+  "ok": "OK",
+  "@ok": {
+    "description": "OK",
+    "type": "text",
+    "placeholders": {}
+  },
+  "pleaseEnterANumberGtZero": "请输入一个大于0的数",
+  "@pleaseEnterANumberGtZero": {
+    "description": "Please enter a number greater than zero",
+    "type": "text",
+    "placeholders": {}
+  },
+  "topK": "Top K",
+  "@topK": {
+    "description": "Top K",
+    "type": "text",
+    "placeholders": {}
+  },
+  "apiBaseUrl": "API地址",
+  "@apiBaseUrl": {
+    "description": "API Base URL",
+    "type": "text",
+    "placeholders": {}
+  },
+  "notSet": "未设置",
+  "@notSet": {
+    "description": "Not Set",
+    "type": "text",
+    "placeholders": {}
+  },
+  "about": "关于",
+  "@about": {
+    "description": "About",
+    "type": "text",
+    "placeholders": {}
+  },
+  "version": "版本",
+  "@version": {
+    "description": "Version",
+    "type": "text",
+    "placeholders": {}
+  },
+  "appIntroduction": "OpenSeed 是一个开放种子示例软件，为AI赋能、大尺度且开源的种子分析生态而生。\n\n作者: XXX\n\nCopyright © 2025 OpenSeed All rights reserved.\n\n",
+  "@appIntroduction": {
+    "description": "App Introduction",
+    "type": "text",
+    "placeholders": {}
+  },
+  "appAuthor": "作者: Rainyl 及所有贡献者",
+  "@appAuthor": {
+    "description": "App Author",
+    "type": "text",
+    "placeholders": {}
+  },
+  "appCopyright": "Copyright © 2025 OpenSeed All rights reserved.",
+  "@appCopyright": {
+    "description": "App Copyright",
+    "type": "text",
+    "placeholders": {}
+  },
+  "inference": "推理",
+  "@inference": {
+    "description": "Inference",
+    "type": "text",
+    "placeholders": {}
+  },
+  "results": "结果",
+  "@results": {
+    "description": "Inference Result",
+    "type": "text",
+    "placeholders": {}
+  },
+  "inferenceFailed": "推理出错",
+  "@inferenceFailed": {
+    "description": "Inference Failed",
+    "type": "text",
+    "placeholders": {}
+  },
+  "inferenceImage": "推理图片",
+  "@inferenceImage": {
+    "description": "Inference Image",
+    "type": "text",
+    "placeholders": {}
+  },
+  "modelInfo": "模型信息",
+  "@modelInfo": {
+    "description": "Model Info",
+    "type": "text",
+    "placeholders": {}
+  },
+  "model": "模型名称",
+  "@model": {
+    "description": "Model",
+    "type": "text",
+    "placeholders": {}
+  },
+  "backend": "后端",
+  "@backend": {
+    "description": "Backend",
+    "type": "text",
+    "placeholders": {}
+  },
+  "memory": "内存占用",
+  "@memory": {
+    "description": "Memory",
+    "type": "text",
+    "placeholders": {}
+  },
+  "time": "推理延迟",
+  "@time": {
+    "description": "Time",
+    "type": "text",
+    "placeholders": {}
+  },
+  "flops": "FLOPs",
+  "@flops": {
+    "description": "FLOPs",
+    "type": "text",
+    "placeholders": {}
+  },
+  "confidence": "置信度",
+  "@confidence": {
+    "description": "Confidence",
+    "type": "text",
+    "placeholders": {}
+  },
+  "details": "详细信息",
+  "@details": {
+    "description": "Details",
+    "type": "text",
+    "placeholders": {}
+  },
+  "copySpNameToClipboard": "复制物种名称到剪贴板",
+  "@copySpNameToClipboard": {
+    "description": "Copy species Name to Clipboard",
+    "type": "text",
+    "placeholders": {}
+  },
+  "copiedSpNameToClipboard": "已复制物种名称到剪贴板",
+  "@copiedSpNameToClipboard": {
+    "description": "Copied species Name to Clipboard",
+    "type": "text",
+    "placeholders": {}
+  },
+  "pullToFetchMore": "获取更多",
+  "@pullToFetchMore": {
+    "description": "Pull to fetch more",
+    "type": "text",
+    "placeholders": {}
+  },
+  "copyUrl": "复制链接",
+  "@copyUrl": {
+    "description": "Copy URL",
+    "type": "text",
+    "placeholders": {}
+  },
+  "copiedUrlToClipboard": "已复制",
+  "@copiedUrlToClipboard": {
+    "description": "Copied URL to Clipboard",
+    "type": "text",
+    "placeholders": {}
+  },
+  "openInBrowser": "在浏览器中打开",
+  "@openInBrowser": {
+    "description": "Open in Browser",
+    "type": "text",
+    "placeholders": {}
+  },
+  "downloadingModel": "正在下载模型",
+  "@downloadingModel": {
+    "description": "Downloading Model",
+    "type": "text",
+    "placeholders": {}
+  },
+  "downloadingModelName": "正在下载 {modelName}...",
+  "@downloadingModelName": {
+    "description": "Downloading model with name",
+    "type": "text",
+    "placeholders": {
+      "modelName": {
+        "type": "String"
+      }
+    }
+  },
+  "userCancelledDownload": "用户取消下载",
+  "@userCancelledDownload": {
+    "description": "User cancelled download",
+    "type": "text",
+    "placeholders": {}
+  },
+  "startDownloading": "开始下载",
+  "@startDownloading": {
+    "description": "Starting download",
+    "type": "text",
+    "placeholders": {}
+  },
+  "modelDownloadCompleted": "模型 {modelName} 下载完成",
+  "@modelDownloadCompleted": {
+    "description": "Model download completed with name",
+    "type": "text",
+    "placeholders": {
+      "modelName": {
+        "type": "String"
+      }
+    }
+  },
+  "downloadFailed": "下载失败",
+  "@downloadFailed": {
+    "description": "Download failed",
+    "type": "text",
+    "placeholders": {}
+  },
+  "downloadCancelled": "下载已取消",
+  "@downloadCancelled": {
+    "description": "Download cancelled",
+    "type": "text",
+    "placeholders": {}
+  },
+  "downloadFailedWithError": "下载失败: {error}",
+  "@downloadFailedWithError": {
+    "description": "Download failed with error message",
+    "type": "text",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "modelFileNotExists": "模型文件不存在",
+  "@modelFileNotExists": {
+    "description": "Model file does not exist",
+    "type": "text",
+    "placeholders": {}
+  },
+  "modelFileNotExistsDownload": "模型 {modelName} 的文件不存在，是否下载？",
+  "@modelFileNotExistsDownload": {
+    "description": "Model file does not exist, ask to download",
+    "type": "text",
+    "placeholders": {
+      "modelName": {
+        "type": "String"
+      }
+    }
+  },
+  "download": "下载",
+  "@download": {
+    "description": "Download",
+    "type": "text",
+    "placeholders": {}
+  }
+}

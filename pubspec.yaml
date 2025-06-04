@@ -1,0 +1,86 @@
+name: open_seed
+description: "OpenSeed"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.7.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  cached_network_image: ^3.4.1
+  change_case: ^2.2.0
+  custom_refresh_indicator: ^4.0.1
+  cupertino_icons: ^1.0.8
+  dio: ^5.8.0+1
+  envied: ^1.1.1
+  equatable: ^2.0.7
+  flutter_bloc: ^9.1.1
+  flutter_cache_manager: ^3.4.1
+  flutter_inappwebview: ^6.2.0-beta.2
+  geolocator: ^14.0.1
+  http: ^1.4.0
+  hydrated_bloc: ^10.0.0
+  image_picker: ^1.1.2
+  intl: ^0.20.2
+  iplant_api:
+    path: packages/iplant_api
+  json_annotation: ^4.9.0
+  logger: ^2.5.0
+  material_symbols_icons: ^4.2815.1
+  mnn:
+    path: ../mnn.dart
+  package_info_plus: ^8.3.0
+  path_provider: ^2.1.5
+  pro_image_editor: ^9.11.2
+  sqlite3_flutter_libs: ^0.5.33
+  sqlite3: ^2.7.6
+  url_launcher: ^6.3.1
+  waterfall_flow: ^3.1.1
+  weather: ^3.2.1
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  bloc_lint: ^0.2.0-dev.4
+  build_runner: ^2.4.15
+  envied_generator: ^1.1.1
+  # intl_translation: ^0.20.1
+  json_serializable: ^6.8.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/
+    - assets/icons/logo.png
+    - assets/models/
+    - assets/class_desc.txt
+    - assets/openseed.db
+
+hooks:
+  user_defines:
+    mnn:
+      options:
+        build_local: false
+      defines:
+        common:
+          MNN_SUPPORT_BF16: ON
+          MNN_BUILD_OPENCV: OFF
+          MNN_LOW_MEMORY: ON
+        macos:
+          MNN_METAL: ON
+        android:
+          MNN_OPENCL: ON
+          MNN_OPENGL: OFF
+          MNN_VULKAN: OFF
+          MNN_VULKAN_IMAGE: OFF
+          MNN_ARM82: ON
+          MNN_USE_SYSTEM_LIB: OFF
