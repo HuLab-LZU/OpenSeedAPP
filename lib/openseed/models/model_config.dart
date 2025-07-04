@@ -38,7 +38,7 @@ class ModelConfig extends Equatable {
   final String description;
 
   Future<Directory> getModelDir() async {
-    final docDir = await getApplicationDocumentsDirectory();
+    final docDir = await getApplicationCacheDirectory();
     final modelsDir = Directory('${docDir.path}/models');
     if (!await modelsDir.exists()) {
       await modelsDir.create(recursive: true);

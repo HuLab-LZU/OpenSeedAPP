@@ -317,7 +317,7 @@ abstract class TR {
   /// App Introduction
   ///
   /// In en, this message translates to:
-  /// **'OpenSeed APP is an AI-powered, large-scale and open-source seed identification showcase for seed analysis ecosystem.\n\nAuthor: XXX\n\nCopyright © 2025 OpenSeed All rights reserved.\n\n'**
+  /// **'OpenSeed APP is an AI-powered, large-scale and open-source seed identification showcase for seed analysis ecosystem.\n\nAuthor: Rainyl\n\nCopyright © 2025 OpenSeed All rights reserved.\n\n'**
   String get appIntroduction;
 
   /// App Author

@@ -7,7 +7,8 @@ releases:
           platform: android
           target: apk
           build_args:
-            target-platform: android-arm,android-arm64
+            target-platform: android-arm64
+            split-per-abi: true
       # - name: release-ios
       #   package:
       #     platform: ios
@@ -16,6 +17,7 @@ releases:
         package:
           platform: macos
           target: dmg
-      # - name: release-windows
-      #   package:
-      #     platform: windows
+      - name: release-windows
+        package:
+          platform: windows
+          target: zip

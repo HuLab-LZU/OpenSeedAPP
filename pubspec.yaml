@@ -1,8 +1,8 @@
 name: open_seed
-description: "OpenSeed"
+description: "OpenSeed: towards a open-source seed image analysis ecosystem."
 publish_to: 'none'
 
-version: 1.0.0+1
+version: 1.0.0
 
 environment:
   sdk: '>=3.7.0 <4.0.0'
@@ -23,7 +23,7 @@ dependencies:
   flutter_bloc: ^9.1.1
   flutter_cache_manager: ^3.4.1
   flutter_inappwebview: ^6.2.0-beta.2
-  geolocator: ^14.0.1
+  geolocator: ^14.0.2
   http: ^1.4.0
   hydrated_bloc: ^10.0.0
   image_picker: ^1.1.2
@@ -34,11 +34,14 @@ dependencies:
   logger: ^2.5.0
   material_symbols_icons: ^4.2815.1
   mnn:
-    path: ../mnn.dart
+    git:
+      url: https://github.com/rainyl/mnn.dart.git
+      ref: e5ee2f9
   package_info_plus: ^8.3.0
   path_provider: ^2.1.5
   pro_image_editor: ^9.11.2
-  sqlite3_flutter_libs: ^0.5.33
+  sqlcipher_flutter_libs: ^0.6.7
+  # sqlite3_flutter_libs: ^0.5.33
   sqlite3: ^2.7.6
   url_launcher: ^6.3.1
   waterfall_flow: ^3.1.1
@@ -69,12 +72,12 @@ hooks:
   user_defines:
     mnn:
       options:
-        build_local: false
+        build_local: true
       defines:
         common:
           MNN_SUPPORT_BF16: ON
           MNN_BUILD_OPENCV: OFF
-          MNN_LOW_MEMORY: ON
+          MNN_LOW_MEMORY: OFF
         macos:
           MNN_METAL: ON
         android:

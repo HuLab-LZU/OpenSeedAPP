@@ -226,7 +226,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "appIntroduction": "OpenSeed APP is an AI-powered, large-scale and open-source seed identification showcase for seed analysis ecosystem.\n\nAuthor: XXX\n\nCopyright © 2025 OpenSeed All rights reserved.\n\n",
+  "appIntroduction": "OpenSeed APP is an AI-powered, large-scale and open-source seed identification showcase for seed analysis ecosystem.\n\nAuthor: Rainyl\n\nCopyright © 2025 OpenSeed All rights reserved.\n\n",
   "@appIntroduction": {
     "description": "App Introduction",
     "type": "text",

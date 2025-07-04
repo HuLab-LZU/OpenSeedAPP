@@ -2,7 +2,10 @@ import 'dart:io';
 
 import 'package:flutter/services.dart';
 import 'package:iplant_api/iplant_api.dart';
+import 'package:open_seed/openseed/models/models.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:sqlcipher_flutter_libs/sqlcipher_flutter_libs.dart';
+import 'package:sqlite3/open.dart';
 import 'package:sqlite3/sqlite3.dart';
 
 class DatabaseRepository {
@@ -14,13 +17,21 @@ class DatabaseRepository {
   DatabaseRepository({this.pageSize = 20});
 
   Future<void> init() async {
-    final docDir = await getApplicationDocumentsDirectory();
+    final docDir = await getApplicationCacheDirectory();
     final dbPath = File(docDir.path + Platform.pathSeparator + dbName);
     if (!await dbPath.exists()) {
       final bytes = await rootBundle.load("assets/$dbName");
       await dbPath.writeAsBytes(bytes.buffer.asUint8List());
     }
+    open.overrideFor(OperatingSystem.android, openCipherOnAndroid);
     _db = sqlite3.open(dbPath.path);
+
+    if (_db.select('PRAGMA cipher_version;').isEmpty) {
+      throw StateError('SQLCipher library is not available, please check your dependencies!');
+    }
+
+    final key = Env.openSeedDbKey;
+    _db.execute("PRAGMA key = '$key';");
   }
 
   Future<BotanicalKnowledgeItem> getIPlantBkItem({int? oseedId, int? spid, String? latinName}) async {

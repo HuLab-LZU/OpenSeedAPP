@@ -123,7 +123,7 @@ class TRZh extends TR {
 
   @override
   String get appIntroduction =>
-      'OpenSeed 是一个开放种子示例软件，为AI赋能、大尺度且开源的种子分析生态而生。\n\n作者: XXX\n\nCopyright © 2025 OpenSeed All rights reserved.\n\n';
+      'OpenSeed 是一个开放种子示例软件，为AI赋能、大尺度且开源的种子分析生态而生。\n\n作者: Rainyl\n\nCopyright © 2025 OpenSeed All rights reserved.\n\n';
 
   @override
   String get appAuthor => '作者: Rainyl 及所有贡献者';
