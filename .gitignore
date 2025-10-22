@@ -22,6 +22,7 @@ env.g.dart
 *.db
 assets/images
 dist/
+.VSCodeCounter
 
 # IntelliJ related
 *.iml

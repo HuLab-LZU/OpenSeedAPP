@@ -20,28 +20,14 @@ PODS:
   - sqflite_darwin (0.0.4):
     - Flutter
     - FlutterMacOS
-  - sqlite3 (3.49.2):
-    - sqlite3/common (= 3.49.2)
-  - sqlite3/common (3.49.2)
-  - sqlite3/dbstatvtab (3.49.2):
-    - sqlite3/common
-  - sqlite3/fts5 (3.49.2):
-    - sqlite3/common
-  - sqlite3/math (3.49.2):
-    - sqlite3/common
-  - sqlite3/perf-threadsafe (3.49.2):
-    - sqlite3/common
-  - sqlite3/rtree (3.49.2):
-    - sqlite3/common
-  - sqlite3_flutter_libs (0.0.1):
-    - Flutter
+  - SQLCipher (4.9.0):
+    - SQLCipher/standard (= 4.9.0)
+  - SQLCipher/common (4.9.0)
+  - SQLCipher/standard (4.9.0):
+    - SQLCipher/common
+  - sqlcipher_flutter_libs (0.0.1):
     - FlutterMacOS
-    - sqlite3 (~> 3.49.2)
-    - sqlite3/dbstatvtab
-    - sqlite3/fts5
-    - sqlite3/math
-    - sqlite3/perf-threadsafe
-    - sqlite3/rtree
+    - SQLCipher (~> 4.9.0)
   - url_launcher_macos (0.0.1):
     - FlutterMacOS
 
@@ -54,13 +40,13 @@ DEPENDENCIES:
   - path_provider_foundation (from `Flutter/ephemeral/.symlinks/plugins/path_provider_foundation/darwin`)
   - shared_preferences_foundation (from `Flutter/ephemeral/.symlinks/plugins/shared_preferences_foundation/darwin`)
   - sqflite_darwin (from `Flutter/ephemeral/.symlinks/plugins/sqflite_darwin/darwin`)
-  - sqlite3_flutter_libs (from `Flutter/ephemeral/.symlinks/plugins/sqlite3_flutter_libs/darwin`)
+  - sqlcipher_flutter_libs (from `Flutter/ephemeral/.symlinks/plugins/sqlcipher_flutter_libs/macos`)
   - url_launcher_macos (from `Flutter/ephemeral/.symlinks/plugins/url_launcher_macos/macos`)
 
 SPEC REPOS:
   trunk:
     - OrderedSet
-    - sqlite3
+    - SQLCipher
 
 EXTERNAL SOURCES:
   file_selector_macos:
@@ -79,8 +65,8 @@ EXTERNAL SOURCES:
     :path: Flutter/ephemeral/.symlinks/plugins/shared_preferences_foundation/darwin
   sqflite_darwin:
     :path: Flutter/ephemeral/.symlinks/plugins/sqflite_darwin/darwin
-  sqlite3_flutter_libs:
-    :path: Flutter/ephemeral/.symlinks/plugins/sqlite3_flutter_libs/darwin
+  sqlcipher_flutter_libs:
+    :path: Flutter/ephemeral/.symlinks/plugins/sqlcipher_flutter_libs/macos
   url_launcher_macos:
     :path: Flutter/ephemeral/.symlinks/plugins/url_launcher_macos/macos
 
@@ -94,8 +80,8 @@ SPEC CHECKSUMS:
   path_provider_foundation: 080d55be775b7414fd5a5ef3ac137b97b097e564
   shared_preferences_foundation: 9e1978ff2562383bd5676f64ec4e9aa8fa06a6f7
   sqflite_darwin: 20b2a3a3b70e43edae938624ce550a3cbf66a3d0
-  sqlite3: 3c950dc86011117c307eb0b28c4a7bb449dce9f1
-  sqlite3_flutter_libs: 74334e3ef2dbdb7d37e50859bb45da43935779c4
+  SQLCipher: 31878d8ebd27e5c96db0b7cb695c96e9f8ad77da
+  sqlcipher_flutter_libs: df4c20ce574779df9ffa0dceb33e751b068e81c4
   url_launcher_macos: 0fba8ddabfc33ce0a9afe7c5fef5aab3d8d2d673
 
 PODFILE CHECKSUM: 54d867c82ac51cbd61b565781b9fada492027009
