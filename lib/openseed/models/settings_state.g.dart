@@ -26,17 +26,15 @@ SettingsState _$SettingsStateFromJson(Map<String, dynamic> json) =>
           ),
           modelConfig: $checkedConvert(
             'model_config',
-            (v) =>
-                v == null
-                    ? ModelConfig.auto
-                    : ModelConfig.fromJson(v as Map<String, dynamic>),
+            (v) => v == null
+                ? ModelConfig.auto
+                : ModelConfig.fromJson(v as Map<String, dynamic>),
           ),
           backendType: $checkedConvert(
             'backend_type',
-            (v) =>
-                v == null
-                    ? BackendType.auto
-                    : BackendType.fromJson(v as Map<String, dynamic>),
+            (v) => v == null
+                ? BackendType.auto
+                : BackendType.fromJson(v as Map<String, dynamic>),
           ),
           numThreads: $checkedConvert(
             'num_threads',

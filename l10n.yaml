@@ -5,3 +5,4 @@ output-class: TR
 output-localization-file: app_localizations.dart
 nullable-getter: false
 format: true
+untranslated-messages-file: untranslated.txt

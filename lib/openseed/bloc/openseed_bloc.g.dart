@@ -16,10 +16,9 @@ OpenSeedState _$OpenSeedStateFromJson(
       homeBgImageUrl: $checkedConvert('home_bg_image_url', (v) => v as String?),
       settingsState: $checkedConvert(
         'settings_state',
-        (v) =>
-            v == null
-                ? const SettingsState()
-                : SettingsState.fromJson(v as Map<String, dynamic>),
+        (v) => v == null
+            ? const SettingsState()
+            : SettingsState.fromJson(v as Map<String, dynamic>),
       ),
       weather: $checkedConvert(
         'weather',

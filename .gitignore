@@ -23,6 +23,7 @@ env.g.dart
 assets/images
 dist/
 .VSCodeCounter
+untranslated.txt
 
 # IntelliJ related
 *.iml

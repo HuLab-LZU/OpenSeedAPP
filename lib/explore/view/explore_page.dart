@@ -1,12 +1,8 @@
 import 'dart:async';
-import 'dart:io';
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_cache_manager/flutter_cache_manager.dart';
-import 'package:http/http.dart' as http;
-import 'package:http/io_client.dart';
 import 'package:iplant_api/iplant_api.dart';
 import 'package:material_symbols_icons/material_symbols_icons.dart';
 import 'package:open_seed/l10n/g/app_localizations.dart';
@@ -26,14 +22,6 @@ class _ExplorePageState extends State<ExplorePage> {
   static final FocusNode _searchFocusNode = FocusNode();
   static final TextEditingController _searchController = TextEditingController();
   static Timer? _debounce;
-
-  static http.Client _createHttpClient() {
-    final httpClient =
-        HttpClient()
-          ..userAgent = getRandomUserAgent()
-          ..badCertificateCallback = (X509Certificate cert, String host, int port) => true;
-    return IOClient(httpClient);
-  }
 
   final ScrollController _scrollController = ScrollController();
   bool _showBackToTopButton = false;
@@ -94,14 +82,13 @@ class _ExplorePageState extends State<ExplorePage> {
     });
 
     return Scaffold(
-      floatingActionButton:
-          _showBackToTopButton
-              ? FloatingActionButton(
-                onPressed: _scrollToTop,
-                tooltip: TR.of(context).backToTop,
-                child: const Icon(Symbols.arrow_upward),
-              )
-              : null,
+      floatingActionButton: _showBackToTopButton
+          ? FloatingActionButton(
+              onPressed: _scrollToTop,
+              tooltip: TR.of(context).backToTop,
+              child: const Icon(Symbols.arrow_upward),
+            )
+          : null,
       body: CustomScrollView(
         controller: _scrollController,
         slivers: [
@@ -160,15 +147,14 @@ class _ExplorePageState extends State<ExplorePage> {
             decoration: InputDecoration(
               hintText: TR.of(context).search,
               prefixIcon: const Icon(Symbols.search),
-              suffixIcon:
-                  state.searchQuery.isNotEmpty
-                      ? IconButton(
-                        icon: const Icon(Symbols.clear),
-                        onPressed: () {
-                          context.read<OpenSeedBloc>().add(OpenSeedExploreClearSearch());
-                        },
-                      )
-                      : null,
+              suffixIcon: state.searchQuery.isNotEmpty
+                  ? IconButton(
+                      icon: const Icon(Symbols.clear),
+                      onPressed: () {
+                        context.read<OpenSeedBloc>().add(OpenSeedExploreClearSearch());
+                      },
+                    )
+                  : null,
               border: OutlineInputBorder(borderRadius: BorderRadius.circular(25.0)),
             ),
             onChanged: (query) {
@@ -264,9 +250,9 @@ class _ExplorePageState extends State<ExplorePage> {
               latinName: latinName,
             );
             if (context.mounted) {
-              await Navigator.of(context).push(
-                WebViewPage.route(url: url, title: latinName.isNotEmpty ? latinName : chineseName),
-              );
+              await Navigator.of(
+                context,
+              ).push(WebViewPage.route(url: url, title: latinName.isNotEmpty ? latinName : chineseName));
             }
           }
         },
@@ -275,38 +261,27 @@ class _ExplorePageState extends State<ExplorePage> {
           children: <Widget>[
             AspectRatio(
               aspectRatio: 1.0,
-              child:
-                  imageUrl != null
-                      ? CachedNetworkImage(
-                        imageUrl: imageUrl,
-                        fit: BoxFit.cover,
-                        httpHeaders: const {"Accept": "*/*"},
-                        cacheManager: CacheManager(
-                          Config(
-                            'openseed_image_chache_key',
-                            stalePeriod: const Duration(days: 7),
-                            maxNrOfCacheObjects: 100,
-                            repo: JsonCacheInfoRepository(databaseName: 'openseed_image_chache_key'),
-                            fileService: HttpFileService(httpClient: _createHttpClient()),
-                          ),
+              child: imageUrl != null
+                  ? CachedNetworkImage(
+                      imageUrl: imageUrl,
+                      fit: BoxFit.cover,
+                      httpHeaders: {"Accept": "*/*", "User-Agent": getRandomUserAgent()},
+                      progressIndicatorBuilder: (context, url, downloadProgress) => Center(
+                        child: SizedBox(
+                          width: 40,
+                          height: 40,
+                          child: CircularProgressIndicator(value: downloadProgress.progress),
                         ),
-                        progressIndicatorBuilder:
-                            (context, url, downloadProgress) => Center(
-                              child: SizedBox(
-                                width: 40,
-                                height: 40,
-                                child: CircularProgressIndicator(value: downloadProgress.progress),
-                              ),
-                            ),
-                        errorWidget: (context, url, error) {
-                          debugPrint(error.toString());
-                          return const Center(child: Icon(Symbols.broken_image, size: 40));
-                        },
-                      )
-                      : Container(
-                        color: Colors.grey[300],
-                        child: const Center(child: Icon(Symbols.image_not_supported, size: 40)),
                       ),
+                      errorWidget: (context, url, error) {
+                        debugPrint(error.toString());
+                        return const Center(child: Icon(Symbols.broken_image, size: 40));
+                      },
+                    )
+                  : Container(
+                      color: Colors.grey[300],
+                      child: const Center(child: Icon(Symbols.image_not_supported, size: 40)),
+                    ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),

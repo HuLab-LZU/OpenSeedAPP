@@ -2,8 +2,8 @@ import 'dart:convert';
 import 'dart:typed_data';
 
 import 'package:dio/dio.dart';
-import 'package:html/parser.dart' as html;
 import 'package:html/dom.dart' as dom;
+import 'package:html/parser.dart' as html;
 import 'package:iplant_api/src/exceptions.dart';
 import 'package:iplant_api/src/models/models.dart';
 import 'package:iplant_api/src/user_agents.dart';
